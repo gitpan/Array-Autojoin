@@ -1,5 +1,10 @@
 Revision history for Perl extension Array::Autojoin
-                                        Time-stamp: "2001-04-25 03:29:19 MDT"
+                                        Time-stamp: "2001-04-25 17:09:19 MDT"
+
+2001-04-25  Sean M. Burke  sburke@cpan.org
+
+	* Release 0.02 -- (later that same day...)
+	Just fixing an inane typo in the docs.
 
 2001-04-25  Sean M. Burke  sburke@cpan.org
 

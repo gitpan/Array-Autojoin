@@ -3,8 +3,8 @@ require 5;
 package Array::Autojoin;
 use strict;
 use vars qw($VERSION @ISA @EXPORT);
-# TIme-stamp: '1'
-$VERSION = '0.01';
+# Time-stamp: "2001-04-25 17:05:38 MDT"
+$VERSION = '0.02';
 require Exporter;
 @ISA = ('Exporter');
 @EXPORT = ('mkarray');
@@ -60,7 +60,7 @@ Array::Autojoin -- arrayrefs that stringify as join(", ", @$it)
 =head1 DESCRIPTION
 
 This extremely short and simple module provides one exported function,
-C<mkpath( ...items... )>, which makes an arrayref (containing those
+C<mkarray( ...items... )>, which makes an arrayref (containing those
 items) belonging to a class that does nothing other than specifying
 to Perl that when you want the string value of that arrayref, instead
 of giving something like "ARRAY(0x171568f)", it returns a happy
