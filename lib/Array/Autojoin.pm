@@ -3,8 +3,8 @@ require 5;
 package Array::Autojoin;
 use strict;
 use vars qw($VERSION @ISA @EXPORT);
-# Time-stamp: "2001-04-25 17:05:38 MDT"
-$VERSION = '0.02';
+# Time-stamp: "2004-12-29 19:47:36 AST"
+$VERSION = '0.03';
 require Exporter;
 @ISA = ('Exporter');
 @EXPORT = ('mkarray');

@@ -1,6 +1,5 @@
-# Before `make install' is performed this script should be runnable with
-# `make test'. After `make install' it should work as `perl test.pl'
-# Time-stamp: "2001-04-25 03:37:01 MDT"
+
+# Time-stamp: "2004-12-29 19:48:37 AST"
 
 require 5.004;  # altho test 11 fails before 5.005, it seems
 
@@ -9,15 +8,15 @@ use Test;
 use strict;
 BEGIN { plan tests => 19 }
 ok 1;
-print "   Array::Autojoin version: $Array::Autojoin::VERSION\n",
-      "   Perl version $]\n";
+print "#   Array::Autojoin version: $Array::Autojoin::VERSION\n",
+      "#   Perl version $]\n";
 
 my $x = mkarray(4, 5, 6);
 my $y = mkarray(0, undef, '');
 my $z = mkarray(@$x);
 
-print "  x: <$x>\n";
-print "  z: <$z>\n";
+print "#  x: <$x>\n";
+print "#  z: <$z>\n";
 
 ok @$x == 3;
 ok @$y == 3;
@@ -48,5 +47,5 @@ ok $z == $x;
 @$x = qw(foo bar BAZ QUUX);
 ok $x eq "foo, bar, BAZ, QUUX";
 
-print "Tests done.\n";
+print "#Tests done.\n";
 # END
